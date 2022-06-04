@@ -10,7 +10,7 @@ import {
 } from "react-native";
 
 import BannerCarousel from './BannerCarousel'
-import Post from '../../src/Post/posts';
+import Posts from '../Post/posts';
 
 // import { Container } from './styles';
 
@@ -25,10 +25,11 @@ function HomeScreen() {
           alignItems: 'center'
         }}>
           <BannerCarousel />
+          <Posts />
         </View>
 
         {/* content page */}
-        <Post />
+        
         
       </ScrollView>
     </SafeAreaView>
