@@ -8,6 +8,9 @@
     ],
     "android": {
       "package": "com.matheus744.minimalApp"
+    },
+    "ios": {
+      "bundleIdentifier": "com.matheus744.minimalApp"
     }
   }
 }
