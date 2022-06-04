@@ -9,34 +9,45 @@ import {
   Animated,
 } from "react-native";
 
-function Post() {
+import BannerCarousel from './BannerCarousel'
+import Post from '../../src/Post/posts';
+
+// import { Container } from './styles';
+
+function HomeScreen() {
+
   return (
     <SafeAreaView>
-      <ScrollView style={{}}>
+      <ScrollView>
+        
         <View style={{
-            flex: 1,
-            flexDirection: 'row',
+          flex: 1,
+          alignItems: 'center'
         }}>
-          {/* PEGAR UNS POSTS PELA API LÁ */}
+          <BannerCarousel />
         </View>
+
+        {/* content page */}
+        <Post />
+        
       </ScrollView>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  mainContent: {
+  mainHeader: {
     backgroundColor: "#fff",
     margin: 15,
     padding: 10,
     borderRadius: 20,
     flex: 1,
     justifyContent: "center",
-    position: "relative",
+    width: '95%'
   },
   imgContent: {
-    width: 150,
-    height: 150,
+    width: '100%',
+    height: 260,
     borderRadius: 15,
   },
   containerTitle: {
@@ -60,12 +71,11 @@ const styles = StyleSheet.create({
   },
 
   divider: {
-    //idth: 100,
-    height: 2,
+    width: '70%',
+    height: 1,
     backgroundColor: "#000",
-    marginTop: 5,
-    marginBottom: 5,
-    opacity: 0.4,
+    opacity: 0.3,
   },
 });
-export default Post;
+
+export default HomeScreen;
