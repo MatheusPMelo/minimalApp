@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {Component} from 'react';
 import {
     Text, 
     View,
@@ -8,7 +8,7 @@ import { Card } from 'react-native-shadow-cards';
 
 import Carousel from 'react-native-snap-carousel';
 
-export default class App extends React.Component {
+export default class App extends Component {
 
  
     constructor(props){

@@ -3,10 +3,13 @@ import { View, Text } from 'react-native';
 
 // import { Container } from './styles';
 
+
+
 function Sobre() {
+
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Sobre</Text>
+        <Text>SOBRE</Text>
       </View>
     );
   }

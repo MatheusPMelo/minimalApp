@@ -14,7 +14,7 @@ function Post() {
     <SafeAreaView>
       <ScrollView>
         <View>
-          <ContainerPosts />
+            <ContainerPosts />
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -25,7 +25,7 @@ function HomeScreen() {
           alignItems: 'center'
         }}>
           <BannerCarousel />
-          <Posts />
+          
         </View>
 
         {/* content page */}
